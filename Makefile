@@ -1,6 +1,6 @@
 CC=gcc
 EXECUTABLES=server client
-OUTDIR=bin
+OUT_DIR=bin
 
 all: $(EXECUTABLES)
 
