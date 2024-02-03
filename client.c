@@ -28,10 +28,11 @@ int main() {
         return -1;
     }
 
-    char message[100];
+    char message[1024];
 
     printf("Send a message to the server: ");
-    scanf("%s", message);
+    fgets(message, sizeof(message), stdin);
+    printf("Message: %s\n", message);
     send(sock, message, strlen(message), 0);
     printf("Message sent\n");
 
